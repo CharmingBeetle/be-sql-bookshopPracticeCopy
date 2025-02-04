@@ -1,2 +1,2 @@
 Instructions for this sprint can be found at:
-https://l2c.northcoders.com/courses/be/sql-bookshop 
+https://l2c.northcoders.com/courses/be/sql-bookshop-part-one
