@@ -15,18 +15,6 @@ CREATE TABLE books_table (
 INSERT INTO books_table
 (book_title,book_price,book_quantity_in_stock,release_date,is_fiction)
 VALUES
-<<<<<<< HEAD
-('The Hitchhiker''s Guide to the Galaxy','8.99','560','1997-10-12',TRUE),
-('The Little Prince',6.99,1020,'1943-04-06',TRUE),
-('The Tale of Peter Rabbit',5.99,1000,'1902-10-01',TRUE),
-('Emma',5.22,390,'1815-12-23',TRUE),
-('Nineteen Eighty-Four: A Novel',7.99,420,'1949-06-08',TRUE),
-('The Handmaid''s Tale',8.99,10,'1985-08-01',TRUE),
-('The War of the Worlds',2.50,17,'1897-04-01',TRUE),
-('Captain Corelli''s Mandolin',9.99,0,'1995-08-29',TRUE),
-('A Brief History of Time',8.25,0,'1988-04-01',false),
-('Pride and Prejudice',6.99,4,'1813-01-28',TRUE);
-=======
 ('The Hitchhiker''s Guide to the Galaxy','8.99','560','1997-10-12',true),
 ('The Little Prince','6.99','1020','1943-04-06',true),
 ('The Tale of Peter Rabbit','5.99','1000','1902-10-01',true),
@@ -49,23 +37,23 @@ VALUES
 -- SELECT * FROM books_table WHERE book_title ILIKE '%the%'
 -- SELECT * FROM books_table ORDER BY book_title ASC;
 -- SELECT * FROM books_table ORDER BY book_price DESC;
-    SELECT * 
->>>>>>> 7c0ae4f (Task 4 in progress)
+-- SELECT * FROM books_table WHERE book_price = (SELECT MAX(book_price) FROM books_table);
+-- SELECT * FROM books_table WHERE book_quantity_in_stock > 0 AND book_price < 7;
+--  SELECT * FROM books_table WHERE book_price < 6 OR is_fiction = false;
+ 
 
-change here 
 
--- Query the books table
--- Make some queries to find out some information about the books you have.
 
--- Write a query to list each of the following:
 
--- The books that we have in stock.
--- The non-fiction books.
--- The books released in the 1900s.
--- The books with "the" in the title.
--- All of the books sorted in alphabetical order.
--- All of the books sorted from most to least expensive.
--- The most expensive book.
--- The books that are in stock and are under £7.
--- The books that are under £6 or are non fiction.
--- Hint: You may want to consider how you're going to lay out these queries in your files. You could comment out complete queries, or look into echo statements to give you a nice title should you pipe the output to a file.
+
+
+
+
+ 
+
+-- Delete some books
+-- There are a few books that have been added to the table that are not in stock. Delete them with a single DELETE query (not by altering the data added in task 3)!
+
+-- How could you write the query to show you the removed rows?
+
+-- If you want to run the deletions multiple times to test them out, the data may need to be reset. If you have made multiple files, remember that they will need to be executed to recreate the database and tables.
