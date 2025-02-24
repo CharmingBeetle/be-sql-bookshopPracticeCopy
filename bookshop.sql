@@ -52,7 +52,7 @@ VALUES
     SELECT * 
 >>>>>>> 7c0ae4f (Task 4 in progress)
 
-
+change here 
 
 -- Query the books table
 -- Make some queries to find out some information about the books you have.
